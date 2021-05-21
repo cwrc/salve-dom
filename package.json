@@ -24,7 +24,8 @@
     "postversion": "npm run salve-dom:publish",
     "postpublish": "git push origin --follow-tags",
     "typedoc": "typedoc --out ./build/api --name salve-dom --tsconfig ./src/tsconfig.json --listInvalidSymbolLinks",
-    "clean": "rm -rf build"
+    "clean": "rm -rf build",
+    "cm": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -48,14 +49,16 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-angular": "^8.3.4",
-    "@types/chai": "^4.2.15",
+    "@types/chai": "^4.2.16",
     "@types/mocha": "^5.2.7",
     "@types/systemjs": "^0.20.7",
-    "chai": "^4.3.0",
+    "chai": "^4.3.4",
+    "commitizen": "^4.2.4",
     "conventional-changelog-cli": "^2.1.1",
     "eslint": "^6.8.0",
     "eslint-config-lddubeau-base": "^4.0.2",
     "fs-extra": "^8.1.0",
+    "git-cz": "^4.7.6",
     "glob": "^7.1.6",
     "husky": "^3.1.0",
     "jsdom": "^15.2.1",
@@ -74,7 +77,7 @@
     "systemjs-plugin-text": "0.0.11",
     "tslint": "^5.20.1",
     "tslint-config-lddubeau": "^4.1.2",
-    "typedoc": "^0.20.27",
+    "typedoc": "^0.20.33",
     "typescript": "^3.9.9",
     "versync": "^5.0.0",
     "webpack": "^4.46.0",
