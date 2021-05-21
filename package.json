@@ -3,7 +3,7 @@
   "version": "6.0.2",
   "description": "A library for validating DOM trees according to a Relax NG schema.",
   "main": "salve-dom.min.js",
-  "private": true,
+  "private": false,
   "types": "lib/main.d.ts",
   "versionedSources": "src/main.ts",
   "scripts": {
