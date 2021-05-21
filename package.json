@@ -84,7 +84,7 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "salve": "^9.1.2"
+    "salve-annos": "github:cwrc/salve#develop"
   },
   "husky": {
     "hooks": {

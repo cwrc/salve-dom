@@ -4,12 +4,26 @@
  * @license MPL 2.0
  * @copyright Mangalam Research Center for Buddhist Languages
  */
-import { ConcreteName, DefaultNameResolver, EName, EventSet, Grammar,
-         GrammarWalker, ValidationError } from "salve";
+// @ts-ignore
+import { ConcreteName, DefaultNameResolver, EName, EventSet, Grammar, GrammarWalker, ValidationError } from "salve-annos/build/dist/salve.min";
+
 import { Consuming, EventEmitter } from "./event_emitter";
 import { fixPrototype } from "./tools";
 
-export const version = "6.0.1";
+export const version = "6.0.2";
+
+// tslint:disable-next-line: variable-name
+const Node = {
+  ELEMENT_NODE: 1,
+  ATTRIBUTE_NODE: 2,
+  TEXT_NODE: 3,
+  CDATA_SECTION_NODE: 4,
+  PROCESSING_INSTRUCTION_NODE: 7,
+  COMMENT_NODE: 8,
+  DOCUMENT_NODE: 9,
+  DOCUMENT_TYPE_NODE: 10,
+  DOCUMENT_FRAGMENT_NODE: 11,
+};
 
 function _indexOf(parent: NodeList, needle: Node): number {
   return Array.prototype.indexOf.call(parent, needle);
