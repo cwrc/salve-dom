@@ -21,6 +21,7 @@ module.exports = {
     sourceMapFilename: "[name].js.map",
     library: "salve-dom",
     libraryTarget: "umd",
+    globalObject: "this",
   },
   externals,
 };
